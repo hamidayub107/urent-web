@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1674031965753' stop='1674031983732'>
+    <name>Booking Actions</name>
+    <title>Booking Actions</title>
+    <test-cases>
+        <test-case start='1674031965754' status='broken' stop='1674031983730'>
+            <name>should reject booking from host</name>
+            <title>should reject booking from host</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.87'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>element ("button=Confirm") still not displayed after 10000ms</message>
+                <stack-trace>Error: element ("button=Confirm") still not displayed after 10000ms
+                    at async Trips.pendingAccept (/Users/macbook/Automation/urent-web/test/pageobjects/trips.js:56:9)
+                    at async Context.&lt;anonymous> (/Users/macbook/Automation/urent-web/test/specs/AcceptBooking.js:18:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1674031983731' status='pending' stop='1674031983731'>
+            <name>should logout and verify logout alert message</name>
+            <title>should logout and verify logout alert message</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Test ignored</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

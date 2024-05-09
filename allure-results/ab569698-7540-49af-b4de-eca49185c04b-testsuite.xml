@@ -1,0 +1,75 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1674031147425' stop='1674031176345'>
+    <name>My Login application</name>
+    <title>My Login application</title>
+    <test-cases>
+        <test-case start='1674031147426' status='passed' stop='1674031154945'>
+            <name>should login renter with valid credentials</name>
+            <title>should login renter with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.87'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1674031154946' status='passed' stop='1674031155612'>
+            <name>should logout renter and verify logout alert message</name>
+            <title>should logout renter and verify logout alert message</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.87'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1674031155612' status='broken' stop='1674031165978'>
+            <name>should login host with valid credentials</name>
+            <title>should login host with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.87'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>element ("#rcc-confirm-button") still not displayed after 10000ms</message>
+                <stack-trace>Error: element ("#rcc-confirm-button") still not displayed after 10000ms
+                    at async Home.confirmRCC (/Users/macbook/Automation/urent-web/test/pageobjects/home.js:45:9)
+                    at async Context.&lt;anonymous> (/Users/macbook/Automation/urent-web/test/specs/smoke/SmokeTest.js:29:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1674031165978' status='broken' stop='1674031176345'>
+            <name>should logout host and verify logout alert message</name>
+            <title>should logout host and verify logout alert message</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.87'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Can't call click on element with selector "li=Logout" because element wasn't found</message>
+                <stack-trace>Error: Can't call click on element with selector "li=Logout" because element wasn't found
+                    at async Logout.logoutUser (/Users/macbook/Automation/urent-web/test/pageobjects/logout.js:12:9)
+                    at async Context.&lt;anonymous> (/Users/macbook/Automation/urent-web/test/specs/smoke/SmokeTest.js:40:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

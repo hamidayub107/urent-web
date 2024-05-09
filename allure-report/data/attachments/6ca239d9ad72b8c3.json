@@ -1,0 +1,6 @@
+{
+  "script": "arguments[1].click();",
+  "args": [
+    {}
+  ]
+}

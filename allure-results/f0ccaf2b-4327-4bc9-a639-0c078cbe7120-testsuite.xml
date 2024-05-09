@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1674041880201' stop='1674041901657'>
+    <name>Booking Actions</name>
+    <title>Booking Actions</title>
+    <test-cases>
+        <test-case start='1674041880201' status='broken' stop='1674041896935'>
+            <name>should cancel booking from renter</name>
+            <title>should cancel booking from renter</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.87'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>element click intercepted: Element &lt;i tabindex="-1" aria-checked="false" aria-posinset="2" aria-setsize="5" class="active icon" role="radio">&lt;/i> is not clickable at point (1194, 521). Other element would receive the click: &lt;div class="ui page modals dimmer transition visible active" style="display: flex !important;">...&lt;/div>
+                  (Session info: chrome=109.0.5414.87)</message>
+                <stack-trace>element click intercepted: element click intercepted: Element &lt;i tabindex="-1" aria-checked="false" aria-posinset="2" aria-setsize="5" class="active icon" role="radio">&lt;/i> is not clickable at point (1194, 521). Other element would receive the click: &lt;div class="ui page modals dimmer transition visible active" style="display: flex !important;">...&lt;/div>
+                  (Session info: chrome=109.0.5414.87)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1674041896935' status='broken' stop='1674041901656'>
+            <name>should logout and verify logout alert message</name>
+            <title>should logout and verify logout alert message</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.87'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>element click intercepted: Element &lt;button aria-haspopup="true" aria-expanded="false" type="button" id="menu_popup" class="szh-menu-button">...&lt;/button> is not clickable at point (1417, 53). Other element would receive the click: &lt;div class="ui page modals dimmer transition visible active" style="display: flex !important;">...&lt;/div>
+                  (Session info: chrome=109.0.5414.87)</message>
+                <stack-trace>element click intercepted: element click intercepted: Element &lt;button aria-haspopup="true" aria-expanded="false" type="button" id="menu_popup" class="szh-menu-button">...&lt;/button> is not clickable at point (1417, 53). Other element would receive the click: &lt;div class="ui page modals dimmer transition visible active" style="display: flex !important;">...&lt;/div>
+                  (Session info: chrome=109.0.5414.87)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

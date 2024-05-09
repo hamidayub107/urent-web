@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1674042137522' stop='1674042150595'>
+    <name>My Login application</name>
+    <title>My Login application</title>
+    <test-cases>
+        <test-case start='1674042137523' status='broken' stop='1674042147187'>
+            <name>should login renter with valid credentials</name>
+            <title>should login renter with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.87'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>element click intercepted: Element &lt;button aria-haspopup="true" aria-expanded="false" type="button" id="menu_popup" class="szh-menu-button">...&lt;/button> is not clickable at point (1417, 53). Other element would receive the click: &lt;div class="ui page modals dimmer transition visible active" style="display: flex !important;">...&lt;/div>
+                  (Session info: chrome=109.0.5414.87)</message>
+                <stack-trace>element click intercepted: element click intercepted: Element &lt;button aria-haspopup="true" aria-expanded="false" type="button" id="menu_popup" class="szh-menu-button">...&lt;/button> is not clickable at point (1417, 53). Other element would receive the click: &lt;div class="ui page modals dimmer transition visible active" style="display: flex !important;">...&lt;/div>
+                  (Session info: chrome=109.0.5414.87)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1674042147187' status='passed' stop='1674042150594'>
+            <name>should logout renter and verify logout alert message</name>
+            <title>should logout renter and verify logout alert message</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.87'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

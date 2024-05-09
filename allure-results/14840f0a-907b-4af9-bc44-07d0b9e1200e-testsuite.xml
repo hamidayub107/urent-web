@@ -1,0 +1,48 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1674033147359' stop='1674033177173'>
+    <name>Add card</name>
+    <title>Add card</title>
+    <test-cases>
+        <test-case start='1674033147360' status='broken' stop='1674033172519'>
+            <name>should add a new credit card &amp; verify success message</name>
+            <title>should add a new credit card &amp; verify success message</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.87'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>element ("input[name='cardnumber']") still not displayed after 10000ms</message>
+                <stack-trace>Error: element ("input[name='cardnumber']") still not displayed after 10000ms
+                    at async Card.setCardNumber (/Users/macbook/Automation/urent-web/test/pageobjects/card.js:61:9)
+                    at async Context.&lt;anonymous> (/Users/macbook/Automation/urent-web/test/specs/AddCard.js:20:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1674033172519' status='broken' stop='1674033177173'>
+            <name>should logout and verify logout alert message</name>
+            <title>should logout and verify logout alert message</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.87'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>element click intercepted: Element &lt;button aria-haspopup="true" aria-expanded="false" type="button" id="menu_popup" class="szh-menu-button">...&lt;/button> is not clickable at point (1417, 53). Other element would receive the click: &lt;div class="ui page modals dimmer transition visible active" style="display: flex !important;">...&lt;/div>
+                  (Session info: chrome=109.0.5414.87)</message>
+                <stack-trace>element click intercepted: element click intercepted: Element &lt;button aria-haspopup="true" aria-expanded="false" type="button" id="menu_popup" class="szh-menu-button">...&lt;/button> is not clickable at point (1417, 53). Other element would receive the click: &lt;div class="ui page modals dimmer transition visible active" style="display: flex !important;">...&lt;/div>
+                  (Session info: chrome=109.0.5414.87)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
